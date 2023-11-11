@@ -79,7 +79,7 @@ void solve()
    ll n,q;
    cin>>n>>q;
    
-   //for(ll i=1;i<=n;i++)cin>>a[i];
+  // for(ll i=1;i<=n;i++)cin>>a[i];
    build(1,1,n);
    //cout<<t[1].val<<endl;
    
@@ -87,15 +87,15 @@ void solve()
       ll type;
       cin>>type;
       if(type ==1){
-         ll i, j, v;
-         cin>>i>>j>>v;
-         update(1,1,n,i+1,j,v);
+         ll l, r, v;
+         cin>>l>>r>>v;
+         update(1,1,n,l+1,r,v);
       }
 
       else{
-        ll i,j;
-        cin>>i>>j;
-        cout<<query(1,1,n,i+1,j,0)<<endl;
+        ll l,r;
+        cin>>l>>r;
+        cout<<query(1,1,n,l+1,r,0)<<endl;
       }
    }
 }
