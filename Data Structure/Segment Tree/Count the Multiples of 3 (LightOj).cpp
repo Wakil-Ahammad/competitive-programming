@@ -147,3 +147,5 @@ int main()
   }
     
 }
+
+// https://lightoj.com/problem/count-the-multiples-of-3
